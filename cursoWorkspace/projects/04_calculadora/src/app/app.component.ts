@@ -9,22 +9,22 @@ import { FormsModule } from '@angular/forms';
 })
 
 export class AppComponent {
-  num1:number;
-  num2:number;
+  number1:number;
+  number2:number;
   resultado:number=0
 
   sumar():void{
 
-    this.resultado=this.num1+this.num2;
+    this.resultado=this.number1+this.number2;
 
     let divResultado:any=document.getElementById("divResultado");
-    divResultado.innerHTML=`${this.resultado}`;
+    divResultado.innerHTML=`<h3><b>${this.resultado}</b></h3>`;
   }
 
   multiplicar():void{
-    this.resultado=this.num1*this.num2;
+    this.resultado=this.number1*this.number2;
 
     let divResultado:any=document.getElementById("divResultado");
-    divResultado.innerHTML=`${this.resultado}`;
+    divResultado.innerHTML=`<h3><b>${this.resultado}</b></h3>`;
   }
 }

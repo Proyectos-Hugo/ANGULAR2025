@@ -27,7 +27,7 @@ export class FiltroComponent {
 
   filtrar(){
     this.visible = true;
-    this.resultado = this.datos.filter((pagina) => pagina.tematica == this.temas);
+    this.resultado = this.datos.filter((pagina => pagina.tematica == this.temas));
     this.temas = "";
   }
 }

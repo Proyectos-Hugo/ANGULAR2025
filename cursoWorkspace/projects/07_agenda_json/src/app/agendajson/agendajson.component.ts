@@ -31,4 +31,10 @@ export class AgendajsonComponent {
   mostrar():void{
     this.visible=!this.visible;
   }
+
+  eliminar(c):void{
+    let index= this.agenda.indexOf(c);
+    this.agenda.splice(index,1);
+  }
+
 }

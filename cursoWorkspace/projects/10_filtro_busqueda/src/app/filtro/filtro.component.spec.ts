@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AgendajsonComponent } from './agendajson.component';
+import { FiltroComponent } from './filtro.component';
 
-describe('AgendajsonComponent', () => {
-  let component: AgendajsonComponent;
-  let fixture: ComponentFixture<AgendajsonComponent>;
+describe('FiltroComponent', () => {
+  let component: FiltroComponent;
+  let fixture: ComponentFixture<FiltroComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AgendajsonComponent]
+      imports: [FiltroComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AgendajsonComponent);
+    fixture = TestBed.createComponent(FiltroComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

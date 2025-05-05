@@ -1,0 +1,16 @@
+Indique la tematica: <input type="text" [(ngModel)]="temas" placeholder="Tematica a buscar"/>
+<button (click)="filtrar()">Buscar</button>
+<br>
+<div id="resultado">
+  <h3>Resultado de la busqueda:</h3>
+  <table border="1" *ngIf="visible">
+    <p>{{resultados.length}} resultados encontrados</p>
+    <tr>
+      <th>Tematica</th>
+      <th>URL</th>
+    </tr>
+    <tr *ngFor="let tema of resultados">
+      <td>{{tema.tematica}}</td>
+      <td>{{tema.url}}</td>
+  </table>
+</div>

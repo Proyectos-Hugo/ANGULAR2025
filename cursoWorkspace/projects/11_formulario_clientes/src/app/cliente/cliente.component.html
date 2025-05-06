@@ -1,0 +1,29 @@
+<h1>Inicio de Sesion</h1>
+<br><br>
+Introduce tu usuario: <input type="text" [(ngModel)]="usuario" placeholder="Usuario" />
+<br>
+Introduce tu contraseña: <input type="password" [(ngModel)]="contra" placeholder="Contraseña" />
+<br>
+<br>
+<button (click)="iniciarSesion()">Iniciar Sesion</button>
+<br>
+<button (click)="registrarse()">Registrarse</button>
+<div *ngIf="visible">
+  <h2>Registro</h2>
+  <br>
+  Usuario: <input type="text" [(ngModel)]="usuarioRegistro" placeholder="Usuario"/>
+  <br>
+  Contraseña: <input type="password" [(ngModel)]="contraRegistro" placeholder="Contraseña"/>
+  <br>
+  Nombre: <input type="text" [(ngModel)]="nombreRegistro" placeholder="Nombre"/>
+  <br>
+  email: <input type="email" [(ngModel)]="emailRegistro" placeholder="Email"/>
+  <br>
+  <button (click)="registrar()">Registrar</button>
+</div>
+<br>
+<div>
+  {{resultado}}
+</div>
+<br>
+

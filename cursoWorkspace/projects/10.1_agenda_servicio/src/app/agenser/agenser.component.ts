@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AgendaService } from '../Service/agendaService';
 import { Contacto } from '../model/contactos';
+import { AgendaService } from '../Service/agenda.service';
 
 @Component({
   selector: 'app-agenser',
@@ -15,7 +15,9 @@ export class AgenserComponent {
   email: string;
   telefono: string;
   agenda: Contacto[]=[];
-  agenSevice:AgendaService=new AgendaService();
+
+  constructor(private agenSevice:AgendaService) {
+  }
 
   visible:boolean=false;
   resultado:string;

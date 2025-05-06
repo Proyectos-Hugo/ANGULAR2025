@@ -18,15 +18,20 @@ export class AgenserComponent {
   agenSevice:AgendaService=new AgendaService();
 
   visible:boolean=false;
+  resultado:string;
 
   guardar():void{
-    this.agenda.push(new Contacto(this.nombre,this.telefono,this.email));
+    let contacto = new Contacto(this.nombre,this.email,this.telefono);
+    this.agenSevice.guardar(contacto);
   }
   mostrar():void{
     this.visible=!this.visible;
+    this.agenda = this.agenSevice.mostrar();
+    this.resultado = `${this.agenda}`;
   }
 
   eliminar(c):void{
-
+    this.agenSevice.eliminar(c);
+    this.agenda=this.agenSevice.mostrar();
   }
 }

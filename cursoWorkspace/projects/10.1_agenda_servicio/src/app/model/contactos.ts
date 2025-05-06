@@ -1,5 +1,10 @@
 export class Contacto {
-  nombre: string;
-  telefono: string;
-  email: string;
+  nombre:string;
+  email:string;
+  telefono:string;
+  constructor(nombre:string,email:string,telefono:string){
+    this.nombre=nombre;
+    this.email=email;
+    this.telefono=telefono;
+  }
 }

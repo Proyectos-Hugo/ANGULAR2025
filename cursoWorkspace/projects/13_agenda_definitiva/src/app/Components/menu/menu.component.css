@@ -1,0 +1,52 @@
+.container {
+  font-family: 'Roboto', sans-serif;
+  margin: 20px auto;
+  padding: 10px 20px;
+  max-width: 800px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container a {
+  text-decoration: none;
+  color: #00796b;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 15px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.container a:hover {
+  background: #00796b;
+  color: white;
+}
+
+.container a.router-link-active {
+  background: #004d40;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+router-outlet {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .container a {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+}

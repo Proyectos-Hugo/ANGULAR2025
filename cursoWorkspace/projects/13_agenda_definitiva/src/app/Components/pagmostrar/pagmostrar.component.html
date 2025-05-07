@@ -1,0 +1,18 @@
+<div class="container">
+
+  <br><br>
+  <table border="1">
+    <tr>
+      <th>Nombre</th>
+      <th>Email</th>
+      <th>Teléfono</th>
+    </tr>
+    <tr *ngFor="let c of registro">
+      <td>{{c.nombre}}</td>
+      <td>{{c.email}}</td>
+      <td>{{c.telefono}}</td>
+      <td><button (click)="eliminar(c)">Eliminar</button></td>
+    </tr>
+  </table>
+
+</div>

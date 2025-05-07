@@ -10,5 +10,5 @@ export const routes: Routes = [
   {
     path:"registrar",
     component:RegistroComponent
-  } 
+  }
 ];

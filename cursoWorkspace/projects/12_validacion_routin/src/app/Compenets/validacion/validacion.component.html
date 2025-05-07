@@ -1,0 +1,12 @@
+<h1>Inicio de Sesion</h1>
+<br><br>
+Introduce tu usuario: <input type="text" [(ngModel)]="usuario" placeholder="Usuario" />
+<br>
+Introduce tu contraseña: <input type="password" [(ngModel)]="contra" placeholder="Contraseña" />
+<br>
+<br>
+<button (click)="validar()">Iniciar Sesion</button>
+<br>
+<div>
+  {{resultado}}
+</div>

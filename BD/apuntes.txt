@@ -1,0 +1,49 @@
+BASE DE DATOS MYSQL
+
+SELECT 
+    1. Lista de movimientos de la cuenta 1000 - 
+
+    SELECT
+
+    2. Lista de movimientos de las cuentas de ahorro -
+
+    SELECT * FROM bancabd.cuentas WHERE tipocuenta="ahorro"
+    SELECT * FROM bancabd.movimientos WHERE idCuenta="1000,2000,4000"
+
+    3 Lista de movimientos de las cuentas de ahorro (join)-
+
+    option 1:
+        SELECT * FROM bancabd.movimientos where idCuenta in 
+        (select numeroCuenta from bancabd.cuentas where tipoCuenta="ahorro");
+
+    opcion 2:
+        SELECT * FROM bancabd.movimientos 
+        inner join bancabd.cuentas on movimientos.idCuenta = cuentas.numeroCuenta 
+        where cuentas.tipocuenta = "ahorro";
+
+    opcion 3:
+        SELECT movimientos.* FROM bancabd.movimientos,bancabd.cuentas 
+        where  movimientos.idCuenta = cuentas.numeroCuenta and cuentas.tipocuenta = "ahorro"; 
+
+    opcion 4 (join):
+        SELECT c.* 
+        FROM bancabd.movimientos AS c 
+        join bancabd.cuentas AS d
+        on d.numeroCuenta = c.idCuenta
+        where tipocuenta="ahorro";
+    
+    opcion 5 (doble join):
+        SELECT c.nombre, c.dni 
+        FROM bancabd.clientes as c
+        join bancabd.titulares as t
+        on t.idCliente = c.dni
+        join bancabd.cuentas cu
+        on cu.numeroCuenta= t.idCuenta
+        where cu.numeroCuenta=1000;
+
+UPDATE
+
+    1. Subir 100 euros a todos los movimientos de tipo ingreso - 
+
+    UPDATE bancabd.movimientos SET cantidad=cantidad+100 WHERE operacion="ingreso"
+

@@ -1,0 +1,21 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px 15px; /* Añade más espacio alrededor del contenido */
+  text-align: left;
+  border: 1px solid #ddd; /* Opcional: añade bordes para mayor claridad */
+}
+
+th {
+  background-color: #f4f4f4; /* Opcional: color de fondo para los encabezados */
+}
+
+button {
+  display:block;
+  text-align:center;
+  margin: 20px auto;
+  padding: 10px 20px;
+}

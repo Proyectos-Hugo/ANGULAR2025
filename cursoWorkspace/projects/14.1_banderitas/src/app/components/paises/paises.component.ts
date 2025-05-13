@@ -11,14 +11,17 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './paises.component.css'
 })
 export class PaisesComponent {
+  continentes:string[];
+  continenteSeleccionado:string;
+  paisesContinente:Pais[];
 
-  paises:Pais[];
   constructor(private paisesService:PaisesService){
-
+    paisesService.continentes()
+    .subscribe(resultado=>this.continentes=resultado);
   }
 
-  verPaises():void{
-    this.paisesService.obtenerPaises().subscribe(data => this.paises = data);
-    console.log(this.paises);
+  cargarPaisesContienentes():void{
+    this.paisesService.paisesContinente(this.continenteSeleccionado)
+    .subscribe(resultado=>this.paisesContinente=resultado);
   }
 }

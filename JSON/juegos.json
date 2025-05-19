@@ -1,0 +1,420 @@
+{
+  "juegos": [
+    {
+      "nombre": "Boop",
+      "tipo": "abstracto",
+      "jugadoresMin": "2",
+      "jugadoresMax": "2",
+      "dificultad": "2",
+      "id": "b31f"
+    },
+    {
+      "nombre": "Escape Plan",
+      "tipo": "euro",
+      "jugadoresMin": "1",
+      "jugadoresMax": "5",
+      "dificultad": "4",
+      "id": "46dc"
+    },
+    {
+      "nombre": "Catan",
+      "tipo": "economico",
+      "jugadoresMin": "3",
+      "jugadoresMax": "4",
+      "dificultad": "2",
+      "id": "e718"
+    },
+    {
+      "nombre": "Carcassonne",
+      "tipo": "familiar",
+      "jugadoresMin": "2",
+      "jugadoresMax": "5",
+      "dificultad": "2",
+      "id": "1798"
+    },
+    {
+      "nombre": "Manchas",
+      "tipo": "familiar",
+      "jugadoresMin": "1",
+      "jugadoresMax": "4",
+      "dificultad": "1",
+      "id": "686b"
+    },
+    {
+      "nombre": "Faraway",
+      "tipo": "filler",
+      "jugadoresMin": "2",
+      "jugadoresMax": "6",
+      "dificultad": "2",
+      "id": "21d9"
+    },
+    {
+      "nombre": "Cubitos",
+      "tipo": "familiar",
+      "jugadoresMin": "2",
+      "jugadoresMax": "4",
+      "dificultad": "2",
+      "id": "a162"
+    },
+    {
+      "nombre": "Heat",
+      "tipo": "familiar",
+      "jugadoresMin": "1",
+      "jugadoresMax": "6",
+      "dificultad": "2",
+      "id": "04e4"
+    },
+    {
+      "nombre": "SETI",
+      "tipo": "euro",
+      "jugadoresMin": "1",
+      "jugadoresMax": "4",
+      "dificultad": "4",
+      "id": "071c"
+    },
+    {
+      "nombre": "Root",
+      "tipo": "estrategia",
+      "jugadoresMin": "2",
+      "jugadoresMax": "4",
+      "dificultad": "4",
+      "id": "1220"
+    },
+    {
+      "nombre": "Skyteam",
+      "tipo": "familiar",
+      "jugadoresMin": "2",
+      "jugadoresMax": "2",
+      "dificultad": "2",
+      "id": "f5db"
+    },
+    {
+      "nombre": "Cryptid",
+      "tipo": "deduccion",
+      "jugadoresMin": "3",
+      "jugadoresMax": "5",
+      "dificultad": "2",
+      "id": "0132"
+    },
+    {
+      "nombre": "Pnzi Scheme",
+      "tipo": "economico",
+      "jugadoresMin": "3",
+      "jugadoresMax": "5",
+      "dificultad": "3",
+      "id": "196d"
+    },
+    {
+      "nombre": "Power Plants",
+      "tipo": "estrategia",
+      "jugadoresMin": "1",
+      "jugadoresMax": "5",
+      "dificultad": "3",
+      "id": "4eb0"
+    },
+    {
+      "nombre": "Slay the Spire",
+      "tipo": "cartas",
+      "jugadoresMin": "1",
+      "jugadoresMax": "4",
+      "dificultad": "3",
+      "id": "c18b"
+    },
+    {
+      "nombre": "Pelusas Revolution",
+      "tipo": "cartas",
+      "jugadoresMin": "2",
+      "jugadoresMax": "5",
+      "dificultad": "1",
+      "id": "3fa7"
+    },
+    {
+      "nombre": "Space Base",
+      "tipo": "familiar",
+      "jugadoresMin": "2",
+      "jugadoresMax": "5",
+      "dificultad": "2",
+      "id": "436f"
+    },
+    {
+      "nombre": "Endeavor Deep Sea",
+      "tipo": "euro",
+      "jugadoresMin": "1",
+      "jugadoresMax": "4",
+      "dificultad": "3",
+      "id": "eb6e"
+    },
+    {
+      "nombre": "Keep the heroes Out",
+      "tipo": "familiar",
+      "jugadoresMin": "1",
+      "jugadoresMax": "4",
+      "dificultad": "3",
+      "id": "19b1"
+    },
+    {
+      "nombre": "Captain Flip",
+      "tipo": "familiar",
+      "jugadoresMin": "2",
+      "jugadoresMax": "5",
+      "dificultad": "1",
+      "id": "5151"
+    },
+    {
+      "nombre": "Kelp",
+      "tipo": "estrategia",
+      "jugadoresMin": "2",
+      "jugadoresMax": "2",
+      "dificultad": "2",
+      "id": "1aa5"
+    },
+    {
+      "nombre": "Art Society",
+      "tipo": "subasta",
+      "jugadoresMin": "2",
+      "jugadoresMax": "4",
+      "dificultad": "2",
+      "id": "7d99"
+    },
+    {
+      "nombre": "Cascadia",
+      "tipo": "familiar",
+      "jugadoresMin": "1",
+      "jugadoresMax": "4",
+      "dificultad": "2",
+      "id": "3c81"
+    },
+    {
+      "nombre": "That time you killed me",
+      "tipo": "abstracto",
+      "jugadoresMin": "2",
+      "jugadoresMax": "2",
+      "dificultad": "3",
+      "id": "6fae"
+    },
+    {
+      "nombre": "Wavelength",
+      "tipo": "party",
+      "jugadoresMin": "2",
+      "jugadoresMax": "12",
+      "dificultad": "1",
+      "id": "f029"
+    },
+    {
+      "nombre": "Time's Up",
+      "tipo": "party",
+      "jugadoresMin": "4",
+      "jugadoresMax": "18",
+      "dificultad": "1",
+      "id": "1327"
+    },
+    {
+      "nombre": "Mlem",
+      "tipo": "familiar",
+      "jugadoresMin": "2",
+      "jugadoresMax": "5",
+      "dificultad": "2",
+      "id": "ffe7"
+    },
+    {
+      "nombre": "Aventureros al tren",
+      "tipo": "familiar",
+      "jugadoresMin": "2",
+      "jugadoresMax": "5",
+      "dificultad": "2",
+      "id": "0ea5"
+    },
+    {
+      "nombre": "Exploding Kittens",
+      "tipo": "cartas",
+      "jugadoresMin": "2",
+      "jugadoresMax": "5",
+      "dificultad": "1",
+      "id": "3605"
+    },
+    {
+      "nombre": "Scout",
+      "tipo": "cartas",
+      "jugadoresMin": "2",
+      "jugadoresMax": "5",
+      "dificultad": "2",
+      "id": "8a64"
+    },
+    {
+      "nombre": "insider",
+      "tipo": "party",
+      "jugadoresMin": "4",
+      "jugadoresMax": "8",
+      "dificultad": "1",
+      "id": "4690"
+    },
+    {
+      "nombre": "Piña Coladice",
+      "tipo": "dados",
+      "jugadoresMin": "2",
+      "jugadoresMax": "4",
+      "dificultad": "1",
+      "id": "7058"
+    },
+    {
+      "nombre": "Avio",
+      "tipo": "cartas",
+      "jugadoresMin": "2",
+      "jugadoresMax": "6",
+      "dificultad": "2",
+      "id": "6878"
+    },
+    {
+      "nombre": "Pistas cruzadas",
+      "tipo": "party",
+      "jugadoresMin": "2",
+      "jugadoresMax": "6",
+      "dificultad": "1",
+      "id": "a41d"
+    },
+    {
+      "nombre": "Llama Rock and Roll",
+      "tipo": "dados",
+      "jugadoresMin": "2",
+      "jugadoresMax": "6",
+      "dificultad": "1",
+      "id": "80c6"
+    },
+    {
+      "nombre": "Azul",
+      "tipo": "familiar",
+      "jugadoresMin": "2",
+      "jugadoresMax": "4",
+      "dificultad": "2",
+      "id": "a56e"
+    },
+    {
+      "nombre": "Junk Art",
+      "tipo": "familiar",
+      "jugadoresMin": "2",
+      "jugadoresMax": "6",
+      "dificultad": "1",
+      "id": "32bd"
+    },
+    {
+      "nombre": "Colt Express",
+      "tipo": "familiar",
+      "jugadoresMin": "2",
+      "jugadoresMax": "6",
+      "dificultad": "2",
+      "id": "d860"
+    },
+    {
+      "nombre": "Flamecraft",
+      "tipo": "familiar",
+      "jugadoresMin": "1",
+      "jugadoresMax": "5",
+      "dificultad": "2",
+      "id": "eeac"
+    },
+    {
+      "nombre": "Pandemic",
+      "tipo": "estrategia",
+      "jugadoresMin": "2",
+      "jugadoresMax": "4",
+      "dificultad": "3",
+      "id": "6638"
+    },
+    {
+      "nombre": "Horrified",
+      "tipo": "familiar",
+      "jugadoresMin": "1",
+      "jugadoresMax": "5",
+      "dificultad": "2",
+      "id": "604b"
+    },
+    {
+      "nombre": "Lata",
+      "tipo": "economico",
+      "jugadoresMin": "1",
+      "jugadoresMax": "4",
+      "dificultad": "3",
+      "id": "a23b"
+    },
+    {
+      "nombre": "Harmonies",
+      "tipo": "familiar",
+      "jugadoresMin": "1",
+      "jugadoresMax": "4",
+      "dificultad": "2",
+      "id": "58cb"
+    },
+    {
+      "nombre": "Codenames",
+      "tipo": "party",
+      "jugadoresMin": "2",
+      "jugadoresMax": "8",
+      "dificultad": "2",
+      "id": "dce2"
+    },
+    {
+      "nombre": "Cat in a box",
+      "tipo": "cartas",
+      "jugadoresMin": "2",
+      "jugadoresMax": "5",
+      "dificultad": "2",
+      "id": "473f"
+    },
+    {
+      "nombre": "Ahoy",
+      "tipo": "estrategia",
+      "jugadoresMin": "2",
+      "jugadoresMax": "4",
+      "dificultad": "3",
+      "id": "93fb"
+    },
+    {
+      "nombre": "nekojima",
+      "tipo": "familiar",
+      "jugadoresMin": "1",
+      "jugadoresMax": "5",
+      "dificultad": "1",
+      "id": "441d"
+    },
+    {
+      "nombre": "Project L",
+      "tipo": "estrategia",
+      "jugadoresMin": "1",
+      "jugadoresMax": "4",
+      "dificultad": "2",
+      "id": "2db7"
+    },
+    {
+      "nombre": "Pocimas y brebajes",
+      "tipo": "familiar",
+      "jugadoresMin": "2",
+      "jugadoresMax": "4",
+      "dificultad": "2",
+      "id": "7de6"
+    },
+    {
+      "nombre": "Wingspan",
+      "tipo": "familiar",
+      "jugadoresMin": "1",
+      "jugadoresMax": "5",
+      "dificultad": "3",
+      "id": "f79a"
+    },
+    {
+      "id": "e718",
+      "nombre": "Catan",
+      "tipo": "economico",
+      "jugadoresMin": "3",
+      "jugadoresMax": "4",
+      "dificultad": "2"
+    },
+    {
+      "id": "700",
+      "nombre": "Next",
+      "tipo": "abstracto",
+      "jugadoresMin": "4",
+      "jugadoresMax": "5",
+      "dificultad": "2"
+    }
+  ]
+}

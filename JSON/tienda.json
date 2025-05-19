@@ -1,121 +1,139 @@
 {
-"categorias":[
+  "categorias": [
     {
-        "idCategoria": 1,
-        "nombre": "Electrónica",
-        "proveedor": "TechWorld"
+      "idCategoria": 1,
+      "nombre": "Electrónica",
+      "proveedor": "TechWorld"
     },
     {
-        "idCategoria": 2,
-        "nombre": "Ropa",
-        "proveedor": "FashionStyle"
+      "idCategoria": 2,
+      "nombre": "Ropa",
+      "proveedor": "FashionStyle"
     },
     {
-        "idCategoria": 3,
-        "nombre": "Alimentos",
-        "proveedor": "FreshMarket"
+      "idCategoria": 3,
+      "nombre": "Alimentos",
+      "proveedor": "FreshMarket"
     },
     {
-        "idCategoria": 4,
-        "nombre": "Juguetes",
-        "proveedor": "ToyPlanet"
+      "idCategoria": 4,
+      "nombre": "Juguetes",
+      "proveedor": "ToyPlanet"
     },
     {
-        "idCategoria": 5,
-        "nombre": "Muebles",
-        "proveedor": "HomeDeco"
+      "idCategoria": 5,
+      "nombre": "Muebles",
+      "proveedor": "HomeDeco"
     },
     {
-        "idCategoria": 6,
-        "nombre": "Deportes",
-        "proveedor": "SportGear"
+      "idCategoria": 6,
+      "nombre": "Deportes",
+      "proveedor": "SportGear"
     }
-],
-"clientes":[
+  ],
+  "clientes": [
     {
-        "nombre": "cliente1",
-        "email": "email1@gmail.com",
-        "usuario": "user1",
-        "password": "pass1"
+      "nombre": "cliente1",
+      "email": "email1@gmail.com",
+      "usuario": "user1",
+      "password": "pass1"
     },
     {
-        "nombre": "cliente2",
-        "email": "email2@gmail.com",
-        "usuario": "user2",
-        "password": "pass2"
+      "nombre": "cliente2",
+      "email": "email2@gmail.com",
+      "usuario": "user2",
+      "password": "pass2"
     },
     {
-        "nombre": "cliente3",
-        "email": "email3@gmail.com",
-        "usuario": "user3",
-        "password": "pass3"
+      "nombre": "cliente3",
+      "email": "email3@gmail.com",
+      "usuario": "user3",
+      "password": "pass3"
     },
     {
-        "nombre": "cliente4",
-        "email": "email4@gmail.com",
-        "usuario": "user4",
-        "password": "pass4"
+      "nombre": "cliente4",
+      "email": "email4@gmail.com",
+      "usuario": "user4",
+      "password": "pass4"
     }
-],
-"productos":[
+  ],
+  "productos": [
     {
-        "codigo": 101,
-        "denominacion": "Smartphone",
-        "precio": 599.99,
-        "idCategoria": 1
+      "codigo": 101,
+      "denominacion": "Smartphone",
+      "precio": 599.99,
+      "idCategoria": 1,
+      "id": "386f"
     },
     {
-        "codigo": 102,
-        "denominacion": "Laptop",
-        "precio": 1099.5,
-        "idCategoria": 1
+      "codigo": 102,
+      "denominacion": "Laptop",
+      "precio": 1099.5,
+      "idCategoria": 1,
+      "id": "8a73"
     },
     {
-        "codigo": 103,
-        "denominacion": "Camiseta",
-        "precio": 19.99,
-        "idCategoria": 2
+      "codigo": 103,
+      "denominacion": "Camiseta",
+      "precio": 19.99,
+      "idCategoria": 2,
+      "id": "392a"
     },
     {
-        "codigo": 104,
-        "denominacion": "Pantalón vaquero",
-        "precio": 39.99,
-        "idCategoria": 2
+      "codigo": 104,
+      "denominacion": "Pantalón vaquero",
+      "precio": 39.99,
+      "idCategoria": 2,
+      "id": "35f4"
     },
     {
-        "codigo": 105,
-        "denominacion": "Chocolate negro",
-        "precio": 4.5,
-        "idCategoria": 3
+      "codigo": 105,
+      "denominacion": "Chocolate negro",
+      "precio": 4.5,
+      "idCategoria": 3,
+      "id": "2bdb"
     },
     {
-        "codigo": 106,
-        "denominacion": "Pelota de fútbol",
-        "precio": 25.75,
-        "idCategoria": 6
+      "codigo": 106,
+      "denominacion": "Pelota de fútbol",
+      "precio": 25.75,
+      "idCategoria": 6,
+      "id": "e83c"
     },
     {
-        "codigo": 107,
-        "denominacion": "Muñeca",
-        "precio": 18.99,
-        "idCategoria": 4
+      "codigo": 107,
+      "denominacion": "Muñeca",
+      "precio": 18.99,
+      "idCategoria": 4,
+      "id": "2956"
     },
     {
-        "codigo": 108,
-        "denominacion": "Sofá de 3 plazas",
-        "precio": 499.99,
-        "idCategoria": 5
+      "codigo": 108,
+      "denominacion": "Sofá de 3 plazas",
+      "precio": 499.99,
+      "idCategoria": 5,
+      "id": "185a"
     },
     {
-        "codigo": 109,
-        "denominacion": "Auriculares inalámbricos",
-        "precio": 89.99,
-        "idCategoria": 1
+      "codigo": 109,
+      "denominacion": "Auriculares inalámbricos",
+      "precio": 89.99,
+      "idCategoria": 1,
+      "id": "e4f6"
     },
     {
-        "codigo": 110,
-        "denominacion": "Mesa de comedor",
-        "precio": 299.99,
-        "idCategoria": 5
+      "codigo": 110,
+      "denominacion": "Mesa de comedor",
+      "precio": 299.99,
+      "idCategoria": 5,
+      "id": "ac36"
+    },
+    {
+      "id": "794h",
+      "codigo": "112",
+      "denominacion": "ps5",
+      "precio": 500,
+      "idCategoria": 1
     }
-]}
+  ]
+}

@@ -1,0 +1,21 @@
+Introduce el id de la categoria:
+<input type="number" [(ngModel)]="idCategoria" placeholder="id categoria">
+<br><br>
+<button (click)="buscar()">Buscar</button>
+<table border="1">
+  <tr>
+    <td>codigo</td>
+    <td>denominacion</td>
+    <td>precio</td>
+    <td>Id categoria</td>
+    <td>id</td>
+  </tr>
+  <tr *ngFor="let f of resultado">
+    <th>{{f.codigo}}</th>
+    <th>{{f.denominacion}}</th>
+    <th>{{f.precio}}</th>
+    <th>{{f.idCategoria}}</th>
+    <th>{{f.id}}</th>
+  </tr>
+</table>
+

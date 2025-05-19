@@ -1,6 +1,7 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
-import { PaisesComponent } from './app/components/paises/paises.component';
+import { PoblacionesComponent } from './app/components/poblaciones/poblaciones.component';
 
-bootstrapApplication(PaisesComponent, appConfig)
+
+bootstrapApplication(PoblacionesComponent, appConfig)
   .catch((err) => console.error(err));

@@ -1,34 +1,27 @@
-import { Municipio } from './../../model/municipio';
-import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 import { Provincia } from '../../model/provincia';
-import { ProvinciasService } from '../../service/provincias.service';
+import { Municipio } from '../../model/municipio';
+import { PoblacionesService } from '../../service/provincias.service';
 
 @Component({
-  selector: 'app-provincias',
-  imports: [CommonModule, FormsModule, ],
+  selector: 'app-poblaciones',
+  imports: [FormsModule,CommonModule],
   templateUrl: './provincias.component.html',
   styleUrl: './provincias.component.css'
 })
-
-export class ProvinciasComponent implements OnInit {
-  provincias: Provincia[] = [];
-  municipios: Municipio[] = [];
-  provinciaSeleccionada: string = '';
-
-  constructor(private provinciasService: ProvinciasService) {}
-
-  ngOnInit(): void {
-    this.provinciasService.obtenerProvincias().subscribe(response => {
-      this.provincias = response.provincias;
-    });
+export class PoblacionesComponent {
+  provincias:Provincia[];
+  municipios:Municipio[];
+  codigoProvinciaSel:number;
+  constructor(private poblacionesService:PoblacionesService){
+    poblacionesService.provincias()
+    .subscribe(data=>this.provincias=data);
   }
-
-  onProvinciaSeleccionada(codProv: string): void {
-    this.provinciaSeleccionada = codProv;
-    this.provinciasService.obtenerMunicipios(codProv).subscribe(data => {
-      this.municipios = data;
-    });
+  municipiosProv():void{
+    this.poblacionesService.municipiosProvincia(this.codigoProvinciaSel)
+    .subscribe(data=>this.municipios=data);
   }
 }

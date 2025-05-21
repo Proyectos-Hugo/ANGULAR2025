@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Item } from '../model/Item';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -12,15 +13,16 @@ export class BusqueService {
   url:string = "http://localhost:8000/buscador/swagger-ui/index.html#/";
 
   buscarTematica(tema:string):Observable<Item[]>{
-    const urlbus:string = `${this.url}/buscar?tematica=${tema}`;
-    return this.http.get<Item[]>(urlbus);
+    const url_busqueda = `${this.url}/buscar`;
+     return this.http.get<Item[]>(url_busqueda,{params:{"tematica":tema}});
   }
 
-  nuevaTematica(tema:string,url:string,descripcion:string){
-    const urlnew:string = `${this.url}/alta`;
-    let head= new HttpHeaders();
-    head.set('Contnt-Type','application/json');
-    return this.http.post<Item[]>(urlnew);
+  nuevaTematica(item:Item):Observable<void>{
+    console.log(JSON.stringify(item))
+    const url_alta = `${this.url}/alta`;
+    let head=new HttpHeaders();
+    head.set("Content-Type","application/json")
+    return this.http.post<void>(url_alta, item,{headers:head});
   }
 
   eliminarTematica(tema:string){

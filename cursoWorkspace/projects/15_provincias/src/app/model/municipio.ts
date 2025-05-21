@@ -1,7 +1,7 @@
-export class Municipio {
-  CODIGOINE: string;
-  NOMBRE: string;
-  POBLACION_MUNI: string;
-  SUPERFICIE: string;
-  ALTITUD: string;
+export class Municipio{
+  CODPROV:string;
+  NOMBRE:string;
+  POBLACION_MUNI:number;
+  SUPERFICIE:number;
+  ALTITUD:number;
 }

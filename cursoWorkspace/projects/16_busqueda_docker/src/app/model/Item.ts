@@ -1,4 +1,4 @@
-export class Busqueda {
+export class Item {
   tematica:string;
   url:string;
   descripcion:string;

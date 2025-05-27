@@ -11,7 +11,6 @@ import { MovimientosService } from '../../service/movimientos.service';
 })
 export class MovimientosComponent {
 
-  url:string = 'http://localhost:3000/movimientos';
   movimientos: Movimietos = new Movimietos();
 
   constructor(private movimiento:MovimientosService){
@@ -19,7 +18,7 @@ export class MovimientosComponent {
   }
 
   findByIdCuenta(){
-    
+
   }
 
   findByDate(){

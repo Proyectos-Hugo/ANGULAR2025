@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="form-group">
+      <label for="usr">Introduce id:</label>
+      <input type="number" class="form-control" id="usr" [(ngModel)]="movimientos.idCuenta">
+      <button class="btn btn-info" (click)="findByIdCuenta()">Agregar</button>
+    </div>
+</div>
+<br><br><br>
+<div>
+    <div class="form-group">
+      <label for="usr">Introduce fecha1:</label>
+      <input type="date" class="form-control" id="usr" [(ngModel)]="movimientos.fecha">
+      <label for="usr">Introduce fecha2:</label>
+      <input type="date" class="form-control" id="usr" [(ngModel)]="movimientos.fecha">
+      <button class="btn btn-info" (click)="findByDate()">Buscar</button>
+    </div>
+</div>
+<div>
+  <div class="form-group">
+    <label for="usr">Introduce cuenta:</label>
+    <input type="number" class="form-control" id="usr" [(ngModel)]="movimientos.idCuenta">
+    <label for="usr">Introduce cantidad:</label>
+    <input type="text" class="form-control" id="usr" [(ngModel)]="movimientos.cantidad">
+    <label for="usr">Introduce operacion:</label>
+    <input type="text" class="form-control" id="usr" [(ngModel)]="movimientos.operacion">
+    <button class="btn btn-info" (click)="save()">Agregar</button>
+  </div>
+</div>

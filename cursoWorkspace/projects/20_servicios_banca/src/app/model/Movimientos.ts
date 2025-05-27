@@ -1,4 +1,4 @@
-export class Movimietos {
+export class Movimientos {
    idMovimiento:number;
    idCuenta:number;
    fecha:Date;

@@ -1,7 +1,7 @@
 <div class="container">
     <div class="form-group">
       <label for="usr">Introduce id:</label>
-      <input type="number" class="form-control" id="usr" [(ngModel)]="movimientos.idCuenta">
+      <input type="number" class="form-control" id="usr" [(ngModel)]="idCuenta">
       <button class="btn btn-info" (click)="findByIdCuenta()">Agregar</button>
     </div>
 </div>
@@ -9,9 +9,9 @@
 <div>
     <div class="form-group">
       <label for="usr">Introduce fecha1:</label>
-      <input type="date" class="form-control" id="usr" [(ngModel)]="movimientos.fecha">
+      <input type="date" class="form-control" id="usr" [(ngModel)]="fecha1">
       <label for="usr">Introduce fecha2:</label>
-      <input type="date" class="form-control" id="usr" [(ngModel)]="movimientos.fecha">
+      <input type="date" class="form-control" id="usr" [(ngModel)]="fecha2">
       <button class="btn btn-info" (click)="findByDate()">Buscar</button>
     </div>
 </div>

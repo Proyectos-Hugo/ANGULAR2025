@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -6,28 +7,36 @@ import { Movimientos } from '../../model/Movimientos';
 
 @Component({
   selector: 'app-movimientos',
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './movimientos.component.html',
   styleUrl: './movimientos.component.css'
 })
 export class MovimientosComponent {
 
-  movimientos: Movimientos = new Movimientos();
+
+  listaMovimientos: Movimientos[] = [];
   mensaje: string;
   fecha1:string;
   fecha2:string;
   idCuenta:number;
+  cantidad:number;
+  operacion:string;
+  movimientos:Movimientos;
+
+
 
   constructor(private movimiento:MovimientosService){
 
   }
 
   findByIdCuenta(){
-    return this.movimiento.findByIdCuenta(this.idCuenta);
+    return this.movimiento.findByIdCuenta(this.idCuenta)
+    .subscribe(data => this.listaMovimientos = data);
   }
 
   findByDate(){
-    return this.movimiento.findByDate(this.fecha1,this.fecha2);
+    return this.movimiento.findByDate(this.fecha1,this.fecha2)
+    .subscribe(data => this.listaMovimientos = data);
   }
 
   save(){

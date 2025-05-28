@@ -1,28 +1,73 @@
-<div class="container">
-    <div class="form-group">
-      <label for="usr">Introduce id:</label>
-      <input type="number" class="form-control" id="usr" [(ngModel)]="idCuenta">
-      <button class="btn btn-info" (click)="findByIdCuenta()">Agregar</button>
-    </div>
-</div>
+<h1>BANCO</h1>
 <br><br><br>
+<h1>Filtrado por fechas</h1>
+<br>
 <div>
-    <div class="form-group">
-      <label for="usr">Introduce fecha1:</label>
-      <input type="date" class="form-control" id="usr" [(ngModel)]="fecha1">
-      <label for="usr">Introduce fecha2:</label>
-      <input type="date" class="form-control" id="usr" [(ngModel)]="fecha2">
-      <button class="btn btn-info" (click)="findByDate()">Buscar</button>
-    </div>
+  Selecciona desde que fecha:
+  <input title="fecha1" type="date" name="fecha1" id="" [(ngModel)]="fecha1" />
+  <br /><br />
+  Selecciona hasta que fecha:
+  <input title="fecha2" type="date" name="fecha1" id="" [(ngModel)]="fecha2" />
 </div>
 <div>
-  <div class="form-group">
-    <label for="usr">Introduce cuenta:</label>
-    <input type="number" class="form-control" id="usr" [(ngModel)]="movimientos.idCuenta">
-    <label for="usr">Introduce cantidad:</label>
-    <input type="text" class="form-control" id="usr" [(ngModel)]="movimientos.cantidad">
-    <label for="usr">Introduce operacion:</label>
-    <input type="text" class="form-control" id="usr" [(ngModel)]="movimientos.operacion">
-    <button class="btn btn-info" (click)="save()">Agregar</button>
-  </div>
+  <table>
+    <thead>
+      <th>Fecha Incial: {{ fecha1 }}</th>
+      <th>Fecha Final: {{ fecha2 }}</th>
+    </thead>
+    <tbody *ngFor="let m of listaMovimientos">
+      <td>{{ m.fecha }}</td>
+      <td>{{ m.cantidad }}</td>
+      <td>{{ m.idCuenta }}</td>
+      <td>{{ m.operacion }}</td>
+    </tbody>
+  </table>
+  <button title="buscar" (click)="findByDate()" > BUSCAR </button>
 </div>
+
+<br><br><br><br><br><br>
+
+<h1>Buscar por ID</h1>
+<br>
+<div>
+  Selecciona el Id:
+  <input title="id" type="text" name="id" id="" [(ngModel)]="idCuenta" />
+</div>
+<div>
+  <table>
+    <thead>
+      <th>Id: {{ idCuenta }}</th>
+    </thead>
+    <tbody *ngFor="let m of listaMovimientos">
+      <td>{{ m.fecha }}</td>
+      <td>{{ m.cantidad }}</td>
+      <td>{{ m.idCuenta }}</td>
+      <td>{{ m.operacion }}</td>
+    </tbody>
+  </table>
+  <button title="buscar" (click)="findByIdCuenta()" > BUSCAR </button>
+</div>
+
+<br><br><br><br><br><br>
+
+<!-- <h1>Haz un movimiento</h1>
+<br>
+<div>
+  <input [(ngModel)]="movimientos.idMovimiento">
+  Selecciona el Id Cuenta:
+  <input title="id" type="text" name="id" id="" [(ngModel)]="movimientos.idCuenta" />
+  <br>
+  Selecciona el fecha:
+  <input title="fecha" type="date" name="fecha" id="" [(ngModel)]="movimientos.fecha" />
+  <br>
+  Selecciona el cantidad:
+  <input title="cantidad" type="text" name="cantdad" id="" [(ngModel)]="movimientos.cantidad" />
+  <br>
+  Selecciona la operacion:
+  <input title="operacion" type="text" name="operacion" id="" [(ngModel)]="movimientos.operacion" />
+
+</div>
+<div>
+  <button title="buscar" (click)="save()" > Realizar </button>
+  {{mensaje}}
+</div> -->

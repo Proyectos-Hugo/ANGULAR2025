@@ -22,7 +22,7 @@ export class MovimientosComponent {
   cantidad:number;
   operacion:string;
   movimientos:Movimientos;
-
+  mov:Movimientos[]=[];
 
 
   constructor(private movimiento:MovimientosService){
@@ -31,7 +31,7 @@ export class MovimientosComponent {
 
   findByIdCuenta(){
     return this.movimiento.findByIdCuenta(this.idCuenta)
-    .subscribe(data => this.listaMovimientos = data);
+    .subscribe(data => this.mov = data);
   }
 
   findByDate(){

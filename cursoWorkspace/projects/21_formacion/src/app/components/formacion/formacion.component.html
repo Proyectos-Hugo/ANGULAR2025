@@ -1,0 +1,29 @@
+<h1>Formacion</h1>
+<br><br><br>
+
+<h2>Cursos</h2>
+<div>
+  <button (click)="buscar()">Buscar</button>
+</div>
+
+<br><br>
+<h2>Matriculados</h2>
+
+<div>
+  introduce el codigo del curso:
+  <input type="number" [(ngModel)]="idCodigo">
+  <br>
+  <button (click)="buscarIdCurso()">Buscar</button>
+</div>
+
+<br><br>
+<h2>Matricularse</h2>
+<div>
+  introduce curso:
+  <input type="number" [(ngModel)]="cursoSeleccionado">
+  <br>
+  introduce el usuario:
+  <input type="text" [(ngModel)]="alumnoSeleccionado">
+  <br>
+  <button (click)="matricular()">Matricular</button>
+</div>

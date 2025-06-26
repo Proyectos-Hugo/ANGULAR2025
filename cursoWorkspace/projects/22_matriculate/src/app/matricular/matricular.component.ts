@@ -4,10 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { MatricularService } from '../service/matricular.service';
 import { Curso } from '../model/curso';
 import { Matricula } from '../model/matricula';
+import { NotasPipe } from "../pipe/notas.pipe";
 
 @Component({
   selector: 'app-matricular',
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, NotasPipe],
   templateUrl: './matricular.component.html',
   styleUrl: './matricular.component.css'
 })

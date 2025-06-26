@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
 import { MovimientosService } from '../../service/movimientos.service';
 import { Movimientos } from '../../model/Movimientos';
+import { NotasPipe } from '../../../../../22_matriculate/src/app/pipe/notas.pipe';
 
 @Component({
   selector: 'app-movimientos',
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, NotasPipe],
   templateUrl: './movimientos.component.html',
   styleUrl: './movimientos.component.css'
 })

@@ -1,0 +1,18 @@
+<div class="task-form-container">
+  <h2>{{ isEdit ? 'Editar Tarea' : 'Crear Tarea' }}</h2>
+
+  <form (ngSubmit)="saveTask()">
+    <label for="titulo">Título:</label>
+    <input id="titulo" type="text" [(ngModel)]="task.titulo" name="titulo" required />
+
+    <label for="description">Descripción:</label>
+    <textarea
+      id="description"
+      [(ngModel)]="task.description"
+      name="description"
+      required
+    ></textarea>
+
+    <button type="submit">{{ isEdit ? 'Actualizar' : 'Crear' }}</button>
+  </form>
+</div>
